@@ -1,13 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-	 <meta charset = "UFT-8">
-	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	 <title>Personal Portfolio</title>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!--<canvas id = game_canvas>
+    <img  id = "invader" src="images/Space_Invaders.png">
+</canvas>
+<script src="scripts/game.js"></script>
+-->
+
+<div id = root>
+    <div id="header">
+        <div class = "title"> 
+            <h1>Allen Bateman</h1>
+            <h3>Game Developer</h3>
+            <div id = "contact">
+                <div class = "contact_img"><a href="https://github.com/allenbateman" target="_blank"><img src="images/github.png"></a></div>
+                <div class = "contact_img"><a href="https://www.linkedin.com/in/allen-bateman-neubert-b5ba64167" target="_blank"><img src="images/linkedin.png"></a></div>
+            </div>
+        </div>
+        <div id="profile_img"><img src="images/profilepicture.jpg"></div>    
+
+    </div>
+
+    <div id="about_me">
+        <div class="title">
+            <h2>About me</h2>
+        </div>
+        <div class="content">
+            <p>I’m a person with many different interests, my mind is all over the place with details that want to learn. As the very curious person that  I am, I always have the drive to learn new things from different points of view to have a clear understanding of the whole. This always led me to never know what path to choose as a career.</p>
+            <p>I’ve never thought that developing video games would involve so many interests that I have. The mathematics and the logic, the creative part to represent ideas and emotions and the capability for creating things for people to enjoy such as I do.</p>  
+            <p> For me, video games are the door that opens the path to creating captivating worlds that immerse people in extraordinary adventures.</p> 
+        </div>
+    </div>
+    <div id = "skills">
+        <div class= "title">
+            <h2>Skills</h2>
+        </div>
+        <div class = "skill_content">
+            <div class = "skill_set">
+                <h1>Soft Skills</h1>
+                <p>Leadership</p>
+                <p>Consistency</p>
+                <p>Proactivity</p>
+                <p>Willing to improve my skills</p>
+            </div>
+            <div class = "skill_set">
+                <h1>Hard Skills</h1>
+                <p>C++</p>
+                <p>C</p>
+                <p>C#</p>
+                <p>3D Modeling</p>
+                <p>2D/3D Animation</p>
+            </div>
+        </div>
+    </div>
+
+    <div id = "portfolio">
+        <div class ="title" ><h2>Projects</h2></div>
+        <div id="projects">
+            <div class="project">
+                <div class="project_image"><img src="images/gotg.jpg" alt="Project Image"></div>
+                <div class="project_details">
+                    <div class = "project_title">
+                        <a href="https://pixelplaygroundgam.wixsite.com/pixelplayground/our-game" target="_blank">
+                        <h2>Guardians Of The Galaxy</h2>
+                        </a></div>
+                    <div class = "project_description"> <p>This project was a game made in c++ at the university with all the class, we used a custom engine to create the game. In this project I contributed as the producer and also as a technical artist.</p></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project_image"><img src="images/physics_engine.png" alt="Project Image"></div>
+                <div class="project_details">
+                <div class = "project_title"><a href="https://github.com/allenbateman/Physics-Engine" target="_blank">
+                    <h2>Physisc System</h2>
+                    </a></div>
+                <div class = "project_description"> <p>Small game with custom Physisc in c++ where you have to survive destroying incoming asteroids to your position. There are 5 planets where gravity force will make it harder for you to know they trajectory! Defend yourself! Also works as a particle collision simulator</p></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project_image"><img src="images/real_engine.jpg" alt="Project Image"></div>
+                <div class="project_details">
+                    <div class = "project_title"><a href="https://github.com/allenbateman/Real-Engine" target="_blank">
+                        <h2>Real Engine</h2>
+                        </a></div>
+                    <div class = "project_description"> <p>This project is a University subject, the idea behind was to learn how to build a 3D game engine in c++.
+                        In this project I learned a lot about resource management and software architecture, also learned about modern c++.
+                    </p></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project_image"><img src="images/told_quest.jpg" alt="Project Image"></div>
+                <div class="project_details">
+                    <div class = "project_title"><a href="https://github.com/AlCh440/Project2_CITM" target="_blank">
+                        <h2>The Ever Told Quest</h2>
+                        </a></div>
+                    <div class = "project_description"> <p>This was a small game for a university project, we made a turn-base combat game in c++</p></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project_image"><img src="images/mega_bomberman.png" alt="Project Image"></div>
+                <div class="project_details">
+                    <div class = "project_title"><a href="https://github.com/allenbateman/SuperFantastics" target="_blank">
+                        <h2>Recreation Of An Arcade Game</h2>
+                        </a></div>
+                    <div class = "project_description"> <p>In this project we had to recreate an arcade game in c++, our team recreated Mega Bomberman '94.</p></div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+
 </body>
 </html>
