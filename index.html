@@ -5,42 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio</title>
+    <title>Home</title>
+    <script src="./scripts/ui.js"></script>
 </head>
 <body>
-<!--<canvas id = game_canvas>
-    <img  id = "invader" src="images/Space_Invaders.png">
-</canvas>
-<script src="scripts/game.js"></script>
--->
-
-<div id = root>
-    <div id="header">
-        <div class = "title"> 
-            <h1>Allen Bateman</h1>
-            <h3>Game Developer</h3>
-            <div id = "contact">
-                <div class = "contact_img"><a href="https://github.com/allenbateman" target="_blank"><img src="images/github.png"></a></div>
-                <div class = "contact_img"><a href="https://www.linkedin.com/in/allen-bateman-neubert-b5ba64167" target="_blank"><img src="images/linkedin.png"></a></div>
-            </div>
-        </div>
-        <div id="profile_img"><img src="images/profilepicture.jpg"></div>    
-
-    </div>
-    <nav>
+    <div id="side_nav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./index.html">Home</a>
         <a href="./about.html">About</a>
         <a href="./projects.html">Portfolio</a>
         <a href="./contact.html">Contact</a>
-      </nav>
-    <div id="about_me">
-        <div class="title">
-            <h2>About me</h2>
+    </div> 
+
+    <span class="toggleNav" onclick="openNav()">&#9776;</span>
+
+    <div id = root>
+        <div id="header">
+            <div class = "title"> 
+                <h1>Allen Bateman</h1>
+                <h3>Game Developer</h3>
+                <div id = "contact">
+                    <div class = "contact_img"><a href="https://github.com/allenbateman" target="_blank"><img src="images/github.png"></a></div>
+                    <div class = "contact_img"><a href="https://www.linkedin.com/in/allen-bateman-neubert-b5ba64167" target="_blank"><img src="images/linkedin.png"></a></div>
+                </div>
+            </div>
+            <div id="profile_img"><img src="images/profilepicture.jpg"></div>    
+
         </div>
-        <div class="content">
-            <p>I’m a person with many different interests, my mind is all over the place with details that want to learn. As the very curious person that  I am, I always have the drive to learn new things from different points of view to have a clear understanding of the whole. This always led me to never know what path to choose as a career.</p>
-            <p>I’ve never thought that developing video games would involve so many interests that I have. The mathematics and the logic, the creative part to represent ideas and emotions and the capability for creating things for people to enjoy such as I do.</p>  
-            <p> For me, video games are the door that opens the path to creating captivating worlds that immerse people in extraordinary adventures.</p> 
+
+        <div id="about_me">
+            <div class="title">
+                <h2>About me</h2>
+            </div>
+            <div class="content">
+                <p>I’m a person with many different interests, my mind is all over the place with details that want to learn. As the very curious person that  I am, I always have the drive to learn new things from different points of view to have a clear understanding of the whole. This always led me to never know what path to choose as a career.</p>
+                <p>I’ve never thought that developing video games would involve so many interests that I have. The mathematics and the logic, the creative part to represent ideas and emotions and the capability for creating things for people to enjoy such as I do.</p>  
+                <p> For me, video games are the door that opens the path to creating captivating worlds that immerse people in extraordinary adventures.</p> 
         </div>
     </div>
 </body>

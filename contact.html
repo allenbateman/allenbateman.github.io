@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio</title>
+    <title>Contact</title>
+    <script src="./scripts/ui.js"></script>
 </head>
 <body>
+    <div id="side_nav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
+    </div> 
+
+    <span class="toggleNav" onclick="openNav()">&#9776;</span>
+
 <div id = root>
     <div id="header">
         <div class = "title"> 
@@ -21,11 +32,6 @@
         <div id="profile_img"><img src="images/profilepicture.jpg"></div>    
 
     </div>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./projects.html">Portfolio</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+
 </body>
 </html>

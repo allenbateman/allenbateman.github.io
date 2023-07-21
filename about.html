@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio</title>
+    <title>About</title>
+    <script src="./scripts/ui.js"></script>
 </head>
 <body>
-<!--<canvas id = game_canvas>
-    <img  id = "invader" src="images/Space_Invaders.png">
-</canvas>
-<script src="scripts/game.js"></script>
--->
+    <div id="side_nav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
+    </div> 
+
+    <span class="toggleNav" onclick="openNav()">&#9776;</span>
 
 <div id = root>
-    <div id="header">
+<div id="header">
         <div class = "title"> 
             <h1>Allen Bateman</h1>
             <h3>Game Developer</h3>
@@ -27,12 +32,7 @@
         <div id="profile_img"><img src="images/profilepicture.jpg"></div>    
 
     </div>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./projects.html">Portfolio</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+
     <div id="about_me">
         <div class="title">
             <h2>About me</h2>
