@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'title_font';
+  font-family: 'name_font';
   src: url('../fonts/Konkhmer_Sleokchher/KonkhmerSleokchher-Regular.ttf')  format('truetype')
   
 }
@@ -8,59 +8,74 @@
   src: url('../fonts/Faustina/Faustina-Medium.ttf') format('truetype')
 }
 
+@font-face {
+  font-family: 'title_font';
+  src: url('../fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf') format('truetype')
+}
+
+
 body {
-   background: #252422;
-    padding: 0;
-    font-family: 'text_font', Arial, sans-serif;
-    justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
+  background: #fffcf2;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
   }
   #root{
     justify-content: center;
     align-items: center;
   }
   .title{
-    margin: 0;
-    font-size: 30px;
-    color: #eb5e28;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #252422;
     text-align: left;
-    font-family: 'title_font', Arial, sans-serif;
+    font-family: 'title_font', sans-serif;
   }
-/*----------------------------*/
-#header {
-    width:50%;  
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 20px;
-    display: flex;
-}
+  /*serparator */
+  hr.solid{
+    width:50%;
+    margin-top: 5px;
+    border-top: 2px solid #eb5e28;
+  }
+  .Color-palette{
+    color:#252422;
+    color:#403d39;
+    color:#ccc5b9;
+    color:#fffcf2;
+    color:#eb5e28;
 
+  }
+  /*----------------------------*/
+#main-header {
+  width:50%;  
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+#main-header h1{
+  font-family: 'title_font', sans-serif;
+  float: left;
+  color: #252422;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 30px; 
+}
 #profile_img  {
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-    margin-top: 5%;
+  display: flex;
+  justify-content: left;
+  margin-left: 0%;
+  margin-top: 5%;
+  flex-basis: 70%;
 }
 #profile_img img {
-    border-radius: 50%;
     width: 300px;
     height: 300px;
-   /*border: 1px solid #fffcf2;
-    */
 }
-#contact{
-  display: flex;
-  height:75px;
-  width:150px;
-}
-.contact_img img{
-  height: auto; 
-  width: auto; 
-  max-width: 75px; 
-  max-height: 75px
-}
+
 /*----------------------------*/
 #about_me {
   width:50%;  
@@ -68,17 +83,12 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 20px;
-  /* background-color: #fffcf2;
-  border-radius: 10px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8); */
 }
 
-
-
-#about_me p {
+#about_me {
     font-size: 18px;
     line-height: 1.5;
-    color: #fffcf2;
+    color: #252422;
     font-family: 'text_font', Arial, sans-serif;
 }
 
@@ -87,22 +97,28 @@ body {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
-}
-
-.skill_set{
-  font-size: 18px;
-  line-height: 1.5;
-  color: #fffcf2;
-  font-family: 'text_font', Arial, sans-serif;
-  width:250px;
 }
 
 .skill_content{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 25%;
+  display: flex;
 }
+.skill_set{
+  line-height: 1.5;
+  color: #252422;
+  width:250px;
+}
+.skill_set a{
+  font-family: 'text_font', Arial, sans-serif;
+  font-size: 18px;
+}
+.skill_set h2{
+  font-family: 'title_font', Arial, sans-serif;
+  font-size: 15px;
+}
+
 #portfolio{
   width:50%;  
   margin: 0 auto;
@@ -138,7 +154,7 @@ body {
     overflow: hidden;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 15px #eb5e28;
     transition: background-color 0.5s ease, transform 0.3s ease
 }
 
@@ -234,21 +250,22 @@ body {
     background-color: #f8f8f8;
     border-radius: 4px;
   }
-/*----------------------------*/
-#game_canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  pointer-events: none; /* Prevent canvas from capturing mouse events */
-  border: 1px solid #ccc;
-  width:100%;
-  height:100%;
+#contact{
+  display: flex;
+  height:75px;
+  width:150px;
+  width:50%;  
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+
 }
-.entity {
-  position: absolute;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: red;
+.contact_img img{
+  height: auto; 
+  width: auto; 
+  max-width: 75px; 
+  max-height: 75px;
+  filter: invert(1);
+  background-blend-mode:color-burn;
 }
