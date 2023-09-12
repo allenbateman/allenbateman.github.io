@@ -1,11 +1,7 @@
 @font-face {
-  font-family: 'name_font';
-  src: url('../fonts/Konkhmer_Sleokchher/KonkhmerSleokchher-Regular.ttf')  format('truetype')
-  
-}
-@font-face {
   font-family: 'text_font';
-  src: url('../fonts/Faustina/Faustina-Medium.ttf') format('truetype')
+  src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype')
+ /* src: url('../fonts/Faustina/Faustina-Medium.ttf') format('truetype')*/
 }
 
 @font-face {
@@ -82,6 +78,14 @@ body {
   .about_content {
       flex-direction: column;
   }
+  #projects {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (min-width: 769px) {
+  #projects {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 #profile{
   display: flex;
@@ -136,7 +140,7 @@ body {
   color: #252422;
   width:250px;
 }
-.skill_set a{
+.skill_set p{
   font-family: 'text_font', Arial, sans-serif;
   font-size: 18px;
 }
@@ -150,7 +154,6 @@ body {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
 }
 /* porject settings*/
 #projects_title{
@@ -161,7 +164,7 @@ body {
 }
 
 #projects {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ /*   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
     margin: auto auto;
     display: grid;
     place-items: center;
@@ -179,7 +182,7 @@ body {
     height: 80%;
     overflow: hidden;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5%;
     box-shadow: 0 10px 15px #eb5e28;
     transition: background-color 0.5s ease, transform 0.3s ease
 }
