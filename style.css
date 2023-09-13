@@ -81,11 +81,25 @@ body {
   #projects {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+  .skill_content{
+    flex-direction: column;
+  }
+  #profile_img img {
+    width: 250px;
+    height: 250px;
+}
 }
 @media (min-width: 769px) {
   #projects {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
+  .skill_content{
+    flex-direction: row;
+  }
+  #profile_img img {
+    width: 50%;
+    height: 250px;
+}
 }
 #profile{
   display: flex;
