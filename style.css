@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'text_font';
   src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype')
- /* src: url('../fonts/Faustina/Faustina-Medium.ttf') format('truetype')*/
 }
 
 @font-face {
@@ -85,9 +84,10 @@ body {
     flex-direction: column;
   }
   #profile_img img {
-    width: 250px;
-    height: 250px;
-}
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  } 
 }
 @media (min-width: 769px) {
   #projects {
@@ -96,10 +96,11 @@ body {
   .skill_content{
     flex-direction: row;
   }
-  #profile_img img {
-    width: 50%;
+  #profile_img img{
+    width: 250px;
     height: 250px;
-}
+    object-fit: contain;
+  } 
 }
 #profile{
   display: flex;
@@ -110,10 +111,6 @@ body {
 #profile_img  {
   justify-content: left;
   margin-left: 0%;
-}
-#profile_img img {
-    width: 250px;
-    height: 250px;
 }
 #about_text{
   padding-left: 10px;
@@ -128,13 +125,13 @@ body {
 #about_text p{
   margin: 0;
 }
-.about_content .contact_info{
+/* .about_content .contact_info{
   margin:0;
   padding: 0%;
-  align-items: left;
+  align-items: center;
   display: flex;
   flex-direction: row;
-}
+} */
 /*---------------------------------------*/
 #skills{
   width:50%;  
@@ -293,18 +290,15 @@ body {
     background-color: #f8f8f8;
     border-radius: 4px;
   }
-#contact{
+.contact{
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
-  height:75px;
-  width:150px; 
   margin: 0 auto;
 }
 .contact_img img{
-  height: auto; 
-  width: auto; 
-  max-width: 75px; 
-  max-height: 75px;
+  width:auto;
   filter: invert(1);
   background-blend-mode:color-burn;
 }
