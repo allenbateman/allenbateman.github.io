@@ -8,6 +8,12 @@
   src: url('../fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf') format('truetype')
 }
 
+/*screen size global variales*/
+
+:root {
+  --screen-width: 100%; /* Default value for small screens */
+}
+
 
 body {
   background: #fffcf2;
@@ -30,7 +36,7 @@ body {
   }
   /*serparator */
   hr.solid{
-    width:50%;
+    width:var(--screen-width);
     margin-top: 5px;
     border-top: 2px solid #eb5e28;
   }
@@ -44,7 +50,7 @@ body {
   }
   /*----------------------------*/
 #main-header {
-  width:50%;  
+  width:var(--screen-width);;  
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 100px;
@@ -61,7 +67,7 @@ body {
 }
 /*----------------------------*/
 #about_me {
-  width:50%;  
+  width:var(--screen-width);;  
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -73,7 +79,13 @@ body {
   flex-direction: row;
   align-items: flex-start;
 }
+/*
+  small screen
+*/
 @media (max-width: 768px) {
+  :root {
+    --screen-width: 90%; /* Adjust the value for big screens */
+  }
   .about_content {
       flex-direction: column;
   }
@@ -89,7 +101,13 @@ body {
     object-fit: contain;
   } 
 }
+/*
+  big screen screen
+*/
 @media (min-width: 769px) {
+  :root {
+    --screen-width: 50%; /* Adjust the value for big screens */
+  }
   #projects {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
@@ -134,7 +152,7 @@ body {
 } */
 /*---------------------------------------*/
 #skills{
-  width:50%;  
+  width:var(--screen-width);;  
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -161,7 +179,7 @@ body {
 }
 /*---------------------------------------*/
 #portfolio{
-  width:50%;  
+  width:var(--screen-width);;  
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
