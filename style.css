@@ -36,6 +36,11 @@ body {
   align-items: center;
 }
 
+#p5Canvas{
+margin: 15px;
+padding: 20px;
+}
+
 /* Title Styling */
 .title {
   margin-top: 15px;
@@ -51,12 +56,10 @@ hr.solid {
   margin-top: 5px;
   border-top: 2px solid var(--palette-accent);
 }
-
 /* Main Header Styling */
 #main-header {
   width: var(--screen-width);
   margin: 0 auto;
-  margin-top: 10px;
   margin-bottom: 100px;
   padding: 20px;
 }
@@ -66,13 +69,13 @@ hr.solid {
   float: left;
   color: var(--palette-text);
   text-align: center;
-  padding: 12px;
   text-decoration: none;
   font-size: 30px;
+  font-weight: bold;
 }
 
 /* About Me Section Styling */
-#about_me {
+#about-me {
   width: var(--screen-width);
   margin: 0 auto;
   margin-top: 10px;
@@ -141,15 +144,90 @@ hr.solid {
 .skill_set h2 {
   font-family: 'title_font', Arial, sans-serif;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
+#download-cv {
+  text-align: center; /* Center the button */
+  margin: 20px; /* Add some margin */
+}
+#download-cv a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: var(--palette-background);
+  background-color: var(--palette-accent);
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#download-cv a:hover {
+  background-color: var(--palette-light);
+  transform: scale(1.05);
+}
+#download-cv a:active {
+  background-color: var(--palette-background);
+  transform: scale(1);
+}
+
+
 /* Portfolio Section Styling */
+/* Projects Tab Styling */
+.projectsTab {
+  display: flex;
+  justify-content: left;
+  margin-top: 25px;
+}
+
+.tabButton {
+  background: var(--palette-dark);
+  border: none;
+  color: var(--palette-background);
+  padding: 15px 25px;
+  margin: 0 0px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: 'title_font', Arial, sans-serif;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.tabButton:hover {
+  background:var(--palette-light);
+}
+
+.tabButton:active {
+  transform: translateY(1px);
+ 
+}
+
+.tabButton.active {
+  background: var(--palette-background);
+  border: 2px solid var(--palette-accent);
+  border-bottom: 0;
+  color: var(--palette-text);
+  
+}
+/* Sections */
+.section {
+  display: none; /* Hide all sections by default */
+  padding: 20px;
+}
+/* Active section */
+.section.active {
+  display: block; /* Show the active section */
+  box-shadow:  0 -10px 6px -4px var(--palette-light); /* Upper shadow only */
+  border: 2px solid var(--palette-accent);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
 #portfolio {
   width: var(--screen-width);
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /* Project Settings */
@@ -160,10 +238,11 @@ hr.solid {
   font-family: 'title_font', Arial, sans-serif;
 }
 
-#projects {
+.projects {
   margin: auto auto;
   display: grid;
   place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
