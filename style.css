@@ -60,7 +60,6 @@ hr.solid {
 #main-header {
   width: var(--screen-width);
   margin: 0 auto;
-  margin-bottom: 100px;
   padding: 20px;
 }
 
