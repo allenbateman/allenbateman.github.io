@@ -85,10 +85,24 @@ body {
 
 /* Project Section */
 .card {
+  position: relative; /* To position the pseudo-element */
   background-color: var(--palette-background);
-  border: none;
+
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensure pseudo-element stays within the card */
 }
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+ 
+.card-body{
+  border-left: 2px solid var(--palette-accent);
+  border-right: 2px solid var(--palette-accent);
+} 
 
 .card-title {
   font-family: 'title_font', sans-serif;
