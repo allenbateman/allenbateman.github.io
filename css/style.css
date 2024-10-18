@@ -100,24 +100,33 @@ body {
 
 /* Project Section */
 .card {
-  position: relative; /* To position the pseudo-element */
+  position: relative;
   background-color: var(--palette-background);
-
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Ensure pseudo-element stays within the card */
+  overflow: hidden;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px var(--palette-accent);
 }
  
 .card-body{
   border-left: 2px solid var(--palette-accent);
   border-right: 2px solid var(--palette-accent);
-} 
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+  color: var(--palette-accent);
+}
 
 .card-title {
   font-family: 'title_font', sans-serif;
